@@ -7,13 +7,6 @@
     --clr-surface-a50: #8b8b8b;
 }
 
-.card {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: var(--clr-surface-a10);
-    color: white;
-}
-
 body {
     height: 90vh;
     background-color: var(--clr-surface-a0);
@@ -31,25 +24,49 @@ body {
     gap: 20px;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .two-columns {
     grid-column: 1 / -1;
 }
 
-.text {
+.card {
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: var(--clr-surface-a10);
+    color: white;
+}
+
+.card.with-title {
+    display: grid;
+}
+
+.font {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
     font-size: 24px;
 }
 
-.info.temp.container {
+.title {
+    font-size: 16px;
+}
+
+.info.temp.card {
     grid-row: span 2;
     display: grid;
 }
 
-.info.temp.text {
+.info.temp > .text {
     font-size: 40px;
+    text-align: left;
 }
 
-.info.icon {
+.info.temp > .icon {
     height: 100px;
-    justify-self: center;
+    justify-self: left;
 }

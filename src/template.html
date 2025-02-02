@@ -7,20 +7,22 @@
 </head>
 <body>
     <div id="container">
-        <input type="text" class="text two-columns card" id="city-input">
-        <div class="location info two-columns text card" id="location"></div>
-        <div class="temp info text container card" id="temp-container">
-            <div class="temp info text" id="temp"></div>
+        <input type="text" class="font text two-columns card" id="city-input" placeholder="location...">
+        <div class="location info two-columns font text card hidden" id="location"></div>
+        <div class="temp info card hidden" id="temp-container">
             <img src="" alt="" class="info icon" id="icon">
+            <div class="font text" id="temp"></div>            
         </div>
-        <div class="humidity info text container card" id="humidity-container">
-            <div class="humidity info text" id="humidity"></div>
+        <div class="humidity info card with-title hidden" id="humidity-container">
+            <div class="font title">humidity</div>
+            <div class="font text" id="humidity"></div>
         </div>
-        <div class="windspeed info text container card" id="windspeed-container">
-            <div class="windspeed info text" id="windspeed"></div>
+        <div class="windspeed info card with-title hidden" id="windspeed-container">
+            <div class="font title">wind speed</div>
+            <div class="font text" id="windspeed"></div>
         </div>
-        <div class="conditions info two-columns text card" id="conditions" ></div>
-        <div class="description info two-columns text card" id="description"></div>
+        <div class="conditions info two-columns font text card hidden" id="conditions" ></div>
+        <div class="description info two-columns font text card hidden" id="description"></div>
     </div>
 </body>
 </html>
