@@ -1,0 +1,47 @@
+:root {
+    --clr-surface-a0: #121212;
+    --clr-surface-a10: #282828;
+    --clr-surface-a20: #3f3f3f;
+    --clr-surface-a30: #575757;
+    --clr-surface-a40: #717171;
+    --clr-surface-a50: #8b8b8b;
+}
+
+.card {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--clr-surface-a10);
+    color: white;
+}
+
+body {
+    background-color: var(--clr-surface-a0);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#container {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.two-columns {
+    grid-column: 1 / -1;
+}
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.info.temp.container {
+    grid-row: span 2;
+
+}
+
+.info.temp.text {
+    font-size: 32px;
+}
