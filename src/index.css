@@ -24,8 +24,10 @@ body {
 
 #container {
     width: 600px;
+    height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     gap: 20px;
 }
 
@@ -40,9 +42,14 @@ body {
 
 .info.temp.container {
     grid-row: span 2;
-
+    display: grid;
 }
 
 .info.temp.text {
     font-size: 40px;
+}
+
+.info.icon {
+    height: 100px;
+    justify-self: center;
 }

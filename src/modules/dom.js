@@ -6,6 +6,7 @@ const dom = (() => ({
   description: document.getElementById("description"),
   humidity: document.getElementById("humidity"),
   windspeed: document.getElementById("windspeed"),
+  icon: document.getElementById("icon")
 }))()
 
 export default dom

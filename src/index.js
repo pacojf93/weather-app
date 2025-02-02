@@ -1,5 +1,7 @@
 import './index.css'
 import dom from './modules/dom'
+import icons from './modules/icons'
+import fog from "./weather-icons/fog.svg"
 
 const VISUAL_CROSSING_URL = process.env.VISUAL_CROSSING_URL
 const KEY = process.env.KEY
@@ -16,6 +18,9 @@ dom.input
                 dom.description.textContent = `${response.description}`
                 dom.humidity.textContent = `${response.currentConditions.humidity} %`
                 dom.windspeed.textContent = `${response.currentConditions.windspeed} km/h`
+                dom.icon.src = icons[response.currentConditions.icon]
             })
             .catch(error => console.log(error))
     })
+
+//document.getElementById('icon').src = icons.fog
